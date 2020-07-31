@@ -24,6 +24,8 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -34,11 +36,11 @@
       <div class="row">
         <div class="col">
           <div class="form-group">
-            <label for="newTask">New Task</label>
+            <label for="inpNewTask">New Task</label>
             <input
               type="text"
               class="form-control"
-              id="newTask"
+              id="inpNewTask"
               aria-describedby="newTaskHelp"
               placeholder="Enter the name of the task"
             />
@@ -51,18 +53,12 @@
 
       <!-- Buttons -->
       <div class="row px-4">
-        <button class="btn btn-success col m-2">Add</button>
-        <button class="btn btn-danger col m-2">Clear</button>
+        <button class="btn btn-success col m-2" id="btnAdd">Add</button>
+        <button class="btn btn-danger col m-2" id="btnClear">Clear</button>
       </div>
 
       <!-- task list -->
-      <ul class="row list-group m-2">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-      </ul>
+      <ul class="row list-group m-2" id="ulTasks"></ul>
     </div>
   </body>
 </html>
