@@ -24,6 +24,7 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
@@ -34,7 +35,7 @@
 
       <!-- Input -->
       <div class="row">
-        <div class="col">
+        <div class="col-md-7">
           <div class="form-group">
             <label for="inpNewTask">New Task</label>
             <input
@@ -49,12 +50,28 @@
             >
           </div>
         </div>
-      </div>
 
-      <!-- Buttons -->
-      <div class="row px-4">
-        <button class="btn btn-success col m-2" id="btnAdd">Add</button>
-        <button class="btn btn-danger col m-2" id="btnClear">Clear</button>
+      <!-- buttons -->
+        <div class="col-md-5 row">
+          <div class="col-6 col-sm-3 col-md-6 p-1">
+            <button class="btn btn-success col" id="btnAdd">
+              <i class="fa fa-plus"></i> Add </i>
+            </button>
+          </div>
+          <div class="col-6 col-sm-3 col-md-6 p-1">
+            <button class="btn btn-danger col" id="btnReset">
+              <i class="fa fa-backspace"></i> Reset</button>
+          </div>
+          <div class="col-6 col-sm-3 col-md-6 p-1">
+            <button class="btn btn-info col" id="btnSort">
+              <i class="fa fa-sort-amount-down"></i> Sort </i>
+            </button>
+          </div>
+          <div class="col-6 col-sm-3 col-md-6 p-1">
+            <button class="btn btn-warning col" id="btnCleanup">
+              <i class="fa fa-trash-alt"></i> Cleanup</button>
+          </div>
+        </div>
       </div>
 
       <!-- task list -->
